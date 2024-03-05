@@ -7,8 +7,14 @@ const titulo = document.querySelector('.app__title')
 const botoes = document.querySelectorAll('.app__card-button')
 const startPauseBt = document.querySelector('#start-pause')
 const musicaFocoInput = document.querySelector('#alternar-musica')
-const musica = new Audio('/sons/luna-rise-part-one.mp3')
+const iniciarOuPausarBt = document.querySelector('#start-pause span')
 
+const musica = new Audio('/sons/luna-rise-part-one.mp3')
+const play = new Audio('/sons/play.wav') 
+const pause = new Audio('/sons/pause.mp3')
+const  audioTempoFinalizado = new Audio('/sons/beep.mp3')
+
+const ImgPause = document.querySelector('.app__card-primary-butto-icon')
 
 let tempoDecorridoEmSegundos = 5
 let intervaloId = null
@@ -80,15 +86,20 @@ startPauseBt.addEventListener('click', iniciarOuPausar)
 
 function iniciarOuPausar() {
     if(intervaloId){
-        
+        pause.play()
         zerar()
         return
     }
-    
+    play.play()
     intervaloId = setInterval(contagemRegressiva, 1000)
+    iniciarOuPausarBt.textContent = "Pausar"
+    ImgPause.setAttribute('src', `/imagens/pause.png`)
+
 }
 
 function zerar() {
     clearInterval(intervaloId) 
+    iniciarOuPausarBt.textContent = "Começar"
+    ImgPause.setAttribute('src', `/imagens/play_arrow.png`)
     intervaloId = null
 }
