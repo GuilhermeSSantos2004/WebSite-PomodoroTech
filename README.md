@@ -36,3 +36,18 @@ GET CLASS
 GET ID 
 ![alt text](image-1.png)
 
+#### método innerHTML
+
+O método innerHTML é usado para alterar o conteúdo HTML de um elemento. No caso do projeto Fokus, ele é utilizado para alterar o texto exibido na tag <h1>. Dependendo do contexto selecionado (foco, descanso-curto ou descanso-longo), o texto é modificado de acordo com as instruções do instrutor. Além disso, o método também pode ser usado para inserir texto formatado, como a adição das tags <strong> para destacar partes do texto.
+
+
+- No projeto Fokus, o método innerHTML também é utilizado para criar listas. Para isso, basta adicionar o sinal de + antes do = para concatenar strings e inserir os elementos da lista. Por exemplo:
+             
+  case "foco":
+    titulo.innerHTML = `
+    Otimize sua produtividade,<br>
+    <strong class="app__title-strong">mergulhe no que importa.</strong>
+    `
+break;
+   
+- Nesse caso, o texto "Otimize sua produtividade, mergulhe no que importa" é inserido na tag <h1>, formando uma lista. É importante lembrar de utilizar a sintaxe correta para criar as tags HTML dentro da string do innerHTML.
