@@ -1,6 +1,6 @@
 # Projeto de Aprendizado: Manipulação do DOM com JavaScript
 
-Neste projeto, você terá a oportunidade de aprimorar suas habilidades em manipulação do DOM (Document Object Model) usando JavaScript. Ao longo do projeto, você aprenderá a utilizar várias técnicas e métodos essenciais para dinamicamente alterar o conteúdo e a aparência de uma página web.
+Neste projeto, eu tive a oportunidade de aprimorar suas habilidades em manipulação do DOM (Document Object Model) usando JavaScript. Ao longo do projeto, aprendi a utilizar várias técnicas e métodos essenciais para dinamicamente alterar o conteúdo e a aparência de uma página web.
 
 ## Aprendizados Principais
 
@@ -54,5 +54,3 @@ meuBotao.addEventListener("click", function() {
   alert("Botão clicado!");
 });
 ```
-
-Explore esses conceitos neste projeto prático e fortaleça suas habilidades na manipulação do DOM com JavaScript. Ao final, você terá uma compreensão sólida desses métodos essenciais para criar páginas web interativas e dinâmicas.
