@@ -56,21 +56,4 @@ switch (contexto) {
 }
 ```
 
-### Comandos para Inserir Imagens
 
-Exemplo:
-
-```markdown
-![Alt Text](img-readme
-/image.png.png)
-```
-
-### Comando para Visualizar Imagens
-
-Exemplo:
-
-```markdown
-![Alt Text](img-readme/image.png)
-```
-
-Esse é apenas um exemplo de formatação. Você pode ajustar conforme necessário para atender às necessidades específicas do seu README.md no GitHub.
