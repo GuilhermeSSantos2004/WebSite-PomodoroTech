@@ -61,7 +61,8 @@ switch (contexto) {
 Exemplo:
 
 ```markdown
-![Alt Text](caminho/da/imagem.png)
+![Alt Text](img-readme
+/image.png.png)
 ```
 
 ### Comando para Visualizar Imagens
