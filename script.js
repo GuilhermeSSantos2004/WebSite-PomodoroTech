@@ -5,8 +5,18 @@ const curtoBt = document.querySelector('.app__card-button--curto')
 const longoBt = document.querySelector('.app__card-button--longo')
 const banner = document.querySelector('.app__image')
 const titulo = document.querySelector('.app__title')
-
 const botoes = document.querySelectorAll('.app__card-button')
+
+const musicaFocoInput = document.querySelector('#alternar-musica');
+const musica = new Audio('sons/luna-rise-part-one.mp3');
+
+musicaFocoInput.addEventListener('change', () {
+    if(musica.paused) {
+            musica.play()
+        } else {
+            musica.pause()
+        }
+})
 
 // Após realizar a refatoração e substituir essa parte por um função 
 // focoBt.addEventListener('click', () => {
@@ -21,6 +31,8 @@ const botoes = document.querySelectorAll('.app__card-button')
 //     html.setAttribute('data-contexto', 'descanso-longo')
 //     banner.setAttribute('src', '/imagens/descanso-longo.png')
 // })
+
+
 
 focoBt.addEventListener('click', () => {
     alterarContexto('foco')
